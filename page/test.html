@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <script src="http://localhost:3000/lib/sea.js"></script>
+        <script src="http://localhost:3000/lib/seajs-text.js"></script>
+        <a href="" class="qf-button">AAA</a>
+        <script>
+            seajs.config({
+
+              // 设置路径，方便跨目录调用
+              paths: {
+                'cdn'        : 'http://cdn.bootcss.com',
+                'components' : 'http://localhost:3000/components',
+                'page'       : 'http://localhost:3000/page',
+                'lib'        : 'http://localhost:3000/lib'
+              },
+
+              // 设置别名，方便调用
+              alias: {
+                'jquery': 'cdn/jquery/3.1.1/jquery.js',
+                'button': 'components/button/index'
+              }
+
+            });
+
+        </script>
+        <script>
+            seajs.use( 'page/js/test' );
+        </script>
+    </body>
+</html>
+
+
+
+
+
+

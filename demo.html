@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script src="sea.js"></script>
+		<script src="seajs-text.js"></script>
+		<a href="" class="TTT">AAA</a>
+		<script>
+
+			seajs.config({
+
+			  // 设置路径，方便跨目录调用
+			  paths: {
+			    'cdn': 'http://cdn.bootcss.com'
+			  },
+
+			  // 设置别名，方便调用
+			  alias: {
+			    'jquery': 'cdn/jquery/3.1.1/jquery.js',
+			    'handlebars': 'handlebars.min.js'
+			  }
+
+			});
+
+		</script>
+		<script>
+			seajs.use( 'a.js' );
+		</script>
+	</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+/*
+* @Author: Marte
+* @Date:   2016-12-01 12:16:15
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-12-01 12:21:09
+*/
+/* qf 公用前缀 */
+
+.qf-button{
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 12px;
+    background-color: #75eae7;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
